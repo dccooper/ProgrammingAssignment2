@@ -52,3 +52,15 @@ cacheSolve <- function(x, ...) {
   x$setInverse(m)
   m  
 }
+
+
+## Testing the function
+x <- diag(6,3)
+CachedMarix <- makeCacheMatrix(x)
+cacheSolve(CachedMarix)
+
+y <- diag(3,6)
+CachedMarix <- makeCacheMatrix(y)
+cacheSolve(CachedMatrix) 
+
+cacheSolve(CachedMatrix)   #getting cached data
